@@ -168,6 +168,22 @@ Example
 Topic: iot/sensor/sensor-02/temperature
 Message: 28.5
 
+
+
+PS C:\Users\2024o\iot-sensor-backend> Invoke-RestMethod `
+>>   -Uri http://localhost:5000/api/sensor/sensor-mqtt-final/latest `
+>>   -Method GET
+>> 
+
+
+_id         : 697bc02b74a7769a17237924
+deviceId    : sensor-mqtt-final
+temperature : 26.5
+timestamp   : 1769717803807
+createdAt   : 2026-01-29T20:16:43.811Z
+__v         : 0
+
+
 How It Works
 
 The MQTT subscriber listens using a wildcard topic.
